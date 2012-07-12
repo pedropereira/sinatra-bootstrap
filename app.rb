@@ -1,6 +1,8 @@
 require 'sinatra'
 require 'sass'
 
+require './helpers/helpers.rb'
+
 set :sass, :style => :compressed
 
 get '/stylesheets/:filename.css' do
