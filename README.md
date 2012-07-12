@@ -1,4 +1,0 @@
-sinatra-bootstrap
-=================
-
-Sinatra Bootstrap

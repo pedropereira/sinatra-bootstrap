@@ -1,0 +1,59 @@
+# [sinatra-bootstrap](http://github.com/pedropereira/sinatra-bootstrap)
+
+A basic boilerplate app that I use for my Sinatra projects.
+
+
+## What's inside?
+
+* [Sinatra](http://github.com/sinatra/sinatra)
+* [Sass](http://github.com/nex3/sass/)
+* [Shotgun](http://github.com/rtomayko/shotgun)
+* [Eric Meyer's Reset](http://meyerweb.com/eric/tools/css/reset/)
+* [jQuery](http://jquery.com/)
+
+
+## Structure
+
+    app.rb           # application
+    helpers/         # helper methods
+    models/          # application models
+    public/          # static assets
+      images/        # images
+      javascripts/   # javascripts
+        jquery.js    # minified jQuery
+      stylesheets/   # stylesheets
+    views/           # application views
+      _head.erb      # head partial
+      layout.erb     # common layout
+      index.erb      # homepage
+      stylesheets/   # stylesheets (sass)
+        reset.sass   # Eric Meyer's reset
+        style.sass   # main stylesheet
+
+
+## Getting Started
+
+1. Install bundler
+
+    gem install bundler
+
+2. Install the gems
+
+    bundle install
+
+3. Run the server
+
+    shotgun app.rb
+
+4. Go to [http://localhost:9393](http://localhost:9393)
+
+
+## License
+
+Copyright (C) 2012 Pedro Pereira
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
