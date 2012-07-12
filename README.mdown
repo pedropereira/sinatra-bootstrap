@@ -35,15 +35,15 @@ A basic boilerplate app that I use for my Sinatra projects.
 
 1. Install bundler
 
-    gem install bundler
+    `gem install bundler`
 
 2. Install the gems
 
-    bundle install
+    `bundle install`
 
 3. Run the server
 
-    shotgun app.rb
+    `shotgun app.rb`
 
 4. Go to [http://localhost:9393](http://localhost:9393)
 
