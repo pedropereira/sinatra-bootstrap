@@ -1,5 +1,5 @@
 source :rubygems
 
-gem "sass"
 gem "shotgun"
+gem "compass"
 gem "sinatra"

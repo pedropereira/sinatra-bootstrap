@@ -1,14 +1,21 @@
+require 'compass'
 require 'sinatra'
-require 'sass'
 
 require './helpers/helpers.rb'
 
-set :sass, :style => :compressed
+configure do
+  # set sinatra's variables
+  set :app_file, __FILE__
+  set :root, File.dirname(__FILE__)
+  set :views, 'views'
+  set :public_folder, 'public'
 
-get '/stylesheets/:filename.css' do
+  Compass.add_project_configuration 'config/compass.rb'
+end
+
+get '/stylesheets/:name.css' do
   content_type 'text/css', :charset => 'utf-8'
-  filename = "#{params[:filename]}"
-  render :sass, filename.to_sym, :views => './views/stylesheets'
+  sass :"stylesheets/#{params[:name]}", Compass.sass_engine_options
 end
 
 get '/' do

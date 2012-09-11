@@ -7,6 +7,7 @@ A basic boilerplate app that I use for my Sinatra projects.
 
 * [Sinatra](http://github.com/sinatra/sinatra)
 * [Sass](http://github.com/nex3/sass/)
+* [Compass](http://github.com/chriseppstein/compass)
 * [Shotgun](http://github.com/rtomayko/shotgun)
 * [Eric Meyer's Reset](http://meyerweb.com/eric/tools/css/reset/)
 * [jQuery](http://jquery.com/)
@@ -15,6 +16,8 @@ A basic boilerplate app that I use for my Sinatra projects.
 ## Structure
 
     app.rb           # application
+    config/          # configuration files
+      compass.rb     # compass configuration
     helpers/         # helper methods
     models/          # application models
     public/          # static assets
